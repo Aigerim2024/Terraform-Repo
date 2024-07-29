@@ -1,7 +1,8 @@
-variable "cidr_block" {
-    default = "10.0.0.0/16"
-}
+module "vpc" {
+  source = "../"
 
-variable "region" {
-    default = "us-east-2"
+  cidr_block = "10.0.0.0/16"
+
+
+
 }
